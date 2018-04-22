@@ -1,0 +1,225 @@
+\hypertarget{class_ponto}{}\section{Ponto Class Reference}
+\label{class_ponto}\index{Ponto@{Ponto}}
+
+
+A classe \hyperlink{class_ponto}{Ponto} representa pontos no espaço bidimensional.  
+
+
+
+
+{\ttfamily \#include $<$ponto.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ponto_a5a157b4f3dc28842de40f505666f8899}{Ponto} (float \+\_\+x=0, float \+\_\+y=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_ponto}{Ponto} é o construtor da classe \hyperlink{class_ponto}{Ponto}. \end{DoxyCompactList}\item 
+void \hyperlink{class_ponto_a22129ad4dbf8019c479021d70a9f6774}{setX} (float \+\_\+x)
+\begin{DoxyCompactList}\small\item\em setX altera o valor da coordenada x de um objeto da classe \hyperlink{class_ponto}{Ponto} \end{DoxyCompactList}\item 
+void \hyperlink{class_ponto_a2d9e5b9fade9d3f3f21122a2dc2f5e11}{setY} (float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em setY altera o valor da coordenada y de um objeto da classe \hyperlink{class_ponto}{Ponto} \end{DoxyCompactList}\item 
+float \hyperlink{class_ponto_a81256752897090e5424fdabb992407b5}{getX} (void)
+\begin{DoxyCompactList}\small\item\em getX recupera o valor da coordenada x de um objeto da classe \hyperlink{class_ponto}{Ponto} \end{DoxyCompactList}\item 
+float \hyperlink{class_ponto_a554a249ab828ccfd6173380a4d81010f}{getY} (void)
+\begin{DoxyCompactList}\small\item\em getY recupera o valor da coordenada y de um objeto da classe \hyperlink{class_ponto}{Ponto} \end{DoxyCompactList}\item 
+void \hyperlink{class_ponto_a827488219a7da184d440f687cec49ce6}{set\+XY} (float \+\_\+x, float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em set\+XY altera os valores das coordenadas x e y de um objeto da classe \hyperlink{class_ponto}{Ponto} \end{DoxyCompactList}\item 
+void \hyperlink{class_ponto_ad4eb84742e5823fcf4b7fe6f7b1202ed}{add} (\hyperlink{class_ponto}{Ponto} p)
+\begin{DoxyCompactList}\small\item\em add realiza a operação de soma de 2 pontos \end{DoxyCompactList}\item 
+void \hyperlink{class_ponto_a8863be0ba572c78b0133a6d49993df1b}{sub} (\hyperlink{class_ponto}{Ponto} p)
+\begin{DoxyCompactList}\small\item\em sub realiza a operação de subtração de 2 pontos \end{DoxyCompactList}\item 
+float \hyperlink{class_ponto_acf5167ec08bdd5fbf71bc6a4f1438edc}{norma} (void)
+\begin{DoxyCompactList}\small\item\em norma calcula a norma de um ponto \end{DoxyCompactList}\item 
+void \hyperlink{class_ponto_a96a4395204ec010814e67d20705e630f}{translada} (float a, float b)
+\begin{DoxyCompactList}\small\item\em translada é um método que translada um objeto da classe \hyperlink{class_ponto}{Ponto} \end{DoxyCompactList}\item 
+void \hyperlink{class_ponto_a527d46ce0fc24f112ead68980e52c2ca}{imprime} (void)
+\begin{DoxyCompactList}\small\item\em imprime exibe um objeto da classe \hyperlink{class_ponto}{Ponto} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_ponto}{Ponto} representa pontos no espaço bidimensional. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Ponto@{Ponto}!Ponto@{Ponto}}
+\index{Ponto@{Ponto}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{Ponto(float \+\_\+x=0, float \+\_\+y=0)}{Ponto(float _x=0, float _y=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Ponto\+::\+Ponto (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+x = {\ttfamily 0}, }
+\item[{float}]{\+\_\+y = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a5a157b4f3dc28842de40f505666f8899}{}\label{class_ponto_a5a157b4f3dc28842de40f505666f8899}
+
+
+\hyperlink{class_ponto}{Ponto} é o construtor da classe \hyperlink{class_ponto}{Ponto}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & é o parâmetro que define a coordenada x de um objeto da classe \hyperlink{class_ponto}{Ponto} \\
+\hline
+{\em \+\_\+y} & é o parâmetro que define a coordenada y de um objeto da classe \hyperlink{class_ponto}{Ponto}\\
+\hline
+\end{DoxyParams}
+se um objeto dessa classe for criado sem a passagem de parâmetros para o construtor, o objeto será um \hyperlink{class_ponto}{Ponto} de coordenada (0,0) 
+
+\subsection{Member Function Documentation}
+\index{Ponto@{Ponto}!add@{add}}
+\index{add@{add}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{add(\+Ponto p)}{add(Ponto p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ponto\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Ponto}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_ad4eb84742e5823fcf4b7fe6f7b1202ed}{}\label{class_ponto_ad4eb84742e5823fcf4b7fe6f7b1202ed}
+
+
+add realiza a operação de soma de 2 pontos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & é o objeto do tipo \hyperlink{class_ponto}{Ponto} a ser somado \\
+\hline
+\end{DoxyParams}
+\index{Ponto@{Ponto}!getX@{getX}}
+\index{getX@{getX}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{get\+X(void)}{getX(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Ponto\+::getX (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a81256752897090e5424fdabb992407b5}{}\label{class_ponto_a81256752897090e5424fdabb992407b5}
+
+
+getX recupera o valor da coordenada x de um objeto da classe \hyperlink{class_ponto}{Ponto} 
+
+\begin{DoxyReturn}{Returns}
+valor da coordenada x da classe \hyperlink{class_ponto}{Ponto} 
+\end{DoxyReturn}
+\index{Ponto@{Ponto}!getY@{getY}}
+\index{getY@{getY}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{get\+Y(void)}{getY(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Ponto\+::getY (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a554a249ab828ccfd6173380a4d81010f}{}\label{class_ponto_a554a249ab828ccfd6173380a4d81010f}
+
+
+getY recupera o valor da coordenada y de um objeto da classe \hyperlink{class_ponto}{Ponto} 
+
+\begin{DoxyReturn}{Returns}
+valor da coordenada y da classe \hyperlink{class_ponto}{Ponto} 
+\end{DoxyReturn}
+\index{Ponto@{Ponto}!imprime@{imprime}}
+\index{imprime@{imprime}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{imprime(void)}{imprime(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ponto\+::imprime (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a527d46ce0fc24f112ead68980e52c2ca}{}\label{class_ponto_a527d46ce0fc24f112ead68980e52c2ca}
+
+
+imprime exibe um objeto da classe \hyperlink{class_ponto}{Ponto} 
+
+\index{Ponto@{Ponto}!norma@{norma}}
+\index{norma@{norma}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{norma(void)}{norma(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Ponto\+::norma (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_acf5167ec08bdd5fbf71bc6a4f1438edc}{}\label{class_ponto_acf5167ec08bdd5fbf71bc6a4f1438edc}
+
+
+norma calcula a norma de um ponto 
+
+\begin{DoxyReturn}{Returns}
+o valor da norma do ponto. 
+\end{DoxyReturn}
+\index{Ponto@{Ponto}!setX@{setX}}
+\index{setX@{setX}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{set\+X(float \+\_\+x)}{setX(float _x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ponto\+::setX (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a22129ad4dbf8019c479021d70a9f6774}{}\label{class_ponto_a22129ad4dbf8019c479021d70a9f6774}
+
+
+setX altera o valor da coordenada x de um objeto da classe \hyperlink{class_ponto}{Ponto} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & é o parâmetro para o valor a ser alterado na coordenada x. \\
+\hline
+\end{DoxyParams}
+\index{Ponto@{Ponto}!set\+XY@{set\+XY}}
+\index{set\+XY@{set\+XY}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{set\+X\+Y(float \+\_\+x, float \+\_\+y)}{setXY(float _x, float _y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ponto\+::set\+XY (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+x, }
+\item[{float}]{\+\_\+y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a827488219a7da184d440f687cec49ce6}{}\label{class_ponto_a827488219a7da184d440f687cec49ce6}
+
+
+set\+XY altera os valores das coordenadas x e y de um objeto da classe \hyperlink{class_ponto}{Ponto} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & é o parâmetro para o valor a ser alterado na coordenada x. \\
+\hline
+{\em \+\_\+y} & é o parâmetro para o valor a ser alterado na coordenada y. \\
+\hline
+\end{DoxyParams}
+\index{Ponto@{Ponto}!setY@{setY}}
+\index{setY@{setY}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{set\+Y(float \+\_\+y)}{setY(float _y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ponto\+::setY (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a2d9e5b9fade9d3f3f21122a2dc2f5e11}{}\label{class_ponto_a2d9e5b9fade9d3f3f21122a2dc2f5e11}
+
+
+setY altera o valor da coordenada y de um objeto da classe \hyperlink{class_ponto}{Ponto} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+y} & é o parâmetro para o valor a ser alterado na coordenada y. \\
+\hline
+\end{DoxyParams}
+\index{Ponto@{Ponto}!sub@{sub}}
+\index{sub@{sub}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{sub(\+Ponto p)}{sub(Ponto p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ponto\+::sub (
+\begin{DoxyParamCaption}
+\item[{{\bf Ponto}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a8863be0ba572c78b0133a6d49993df1b}{}\label{class_ponto_a8863be0ba572c78b0133a6d49993df1b}
+
+
+sub realiza a operação de subtração de 2 pontos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & é o objeto do tipo \hyperlink{class_ponto}{Ponto} a ser subtraído \\
+\hline
+\end{DoxyParams}
+\index{Ponto@{Ponto}!translada@{translada}}
+\index{translada@{translada}!Ponto@{Ponto}}
+\subsubsection[{\texorpdfstring{translada(float a, float b)}{translada(float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ponto\+::translada (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ponto_a96a4395204ec010814e67d20705e630f}{}\label{class_ponto_a96a4395204ec010814e67d20705e630f}
+
+
+translada é um método que translada um objeto da classe \hyperlink{class_ponto}{Ponto} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & é o valor a ser transladado na coordenada x. \\
+\hline
+{\em b} & é o valor a ser transladado na coordenada y. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ponto_8h}{ponto.\+h}\item 
+\hyperlink{ponto_8cpp}{ponto.\+cpp}\end{DoxyCompactItemize}
