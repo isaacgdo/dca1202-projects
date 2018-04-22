@@ -2,6 +2,11 @@
 \label{class_poligono}\index{Poligono@{Poligono}}
 
 
+A classe \hyperlink{class_poligono}{Poligono} representa polígonos convexos de até 100 vértices.  
+
+
+
+
 {\ttfamily \#include $<$poligono.\+h$>$}
 
 
@@ -17,22 +22,25 @@ Inheritance diagram for Poligono\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{class_poligono_aa16b7ba7aaed5bdbef77862a69901823}{setn\+Vertices} (int n)
-\item 
+\begin{DoxyCompactList}\small\item\em setn\+Vertices insere vértices no \hyperlink{class_poligono}{Poligono} \end{DoxyCompactList}\item 
 int \hyperlink{class_poligono_a0f63ca667ce8c15230353a5130baf3dd}{num\+Vet\+Pol} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em num\+Vet\+Pol recupera a quantidade de vértices que foram inseridos no \hyperlink{class_poligono}{Poligono} \end{DoxyCompactList}\item 
 void \hyperlink{class_poligono_a07656338edbd5bbd0b9bb7f4272717c1}{set\+Vet\+Pol} (int i, float x, float y)
-\item 
+\begin{DoxyCompactList}\small\item\em set\+Vet\+Pol altera os valores das coordenadas x e y de um vértice (\hyperlink{class_ponto}{Ponto}) do \hyperlink{class_poligono}{Poligono} \end{DoxyCompactList}\item 
 void \hyperlink{class_poligono_a22bdea51dc2a5907b6f2f2dcf034c155}{add\+Pol} (int n)
-\item 
+\begin{DoxyCompactList}\small\item\em add\+Pol adiciona valores aos vértices do Polígono \end{DoxyCompactList}\item 
 float \hyperlink{class_poligono_a5cc5994a3ec316c29b32c0f514167e88}{calc\+Area\+Pol} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em calc\+Area\+Pol calcula a área de um \hyperlink{class_poligono}{Poligono} \end{DoxyCompactList}\item 
 void \hyperlink{class_poligono_aa4948d6082b1cde7f7b683dacb88fde7}{translada\+Pol} (float a, float b)
-\item 
+\begin{DoxyCompactList}\small\item\em translada\+Pol translada um \hyperlink{class_poligono}{Poligono} \end{DoxyCompactList}\item 
 void \hyperlink{class_poligono_a615deb0368ea28feb68d325c2d17e32f}{rotacionar\+Pol} (float angulo, float a, float b)
-\item 
+\begin{DoxyCompactList}\small\item\em rotacionar\+Pol rotaciona um \hyperlink{class_poligono}{Poligono} em torno de um \hyperlink{class_ponto}{Ponto} informado \end{DoxyCompactList}\item 
 void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em imprime\+Pol exibe um \hyperlink{class_poligono}{Poligono} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_poligono}{Poligono} representa polígonos convexos de até 100 vértices. 
 
 \subsection{Member Function Documentation}
 \index{Poligono@{Poligono}!add\+Pol@{add\+Pol}}
@@ -42,6 +50,15 @@ void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} 
 \item[{int}]{n}
 \end{DoxyParamCaption}
 )}\hypertarget{class_poligono_a22bdea51dc2a5907b6f2f2dcf034c155}{}\label{class_poligono_a22bdea51dc2a5907b6f2f2dcf034c155}
+
+
+add\+Pol adiciona valores aos vértices do Polígono 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & é a quantidade de vértices a serem adicionados no \hyperlink{class_poligono}{Poligono} \\
+\hline
+\end{DoxyParams}
 \index{Poligono@{Poligono}!calc\+Area\+Pol@{calc\+Area\+Pol}}
 \index{calc\+Area\+Pol@{calc\+Area\+Pol}!Poligono@{Poligono}}
 \subsubsection[{\texorpdfstring{calc\+Area\+Pol(void)}{calcAreaPol(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Poligono\+::calc\+Area\+Pol (
@@ -49,6 +66,13 @@ void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} 
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}\hypertarget{class_poligono_a5cc5994a3ec316c29b32c0f514167e88}{}\label{class_poligono_a5cc5994a3ec316c29b32c0f514167e88}
+
+
+calc\+Area\+Pol calcula a área de um \hyperlink{class_poligono}{Poligono} 
+
+\begin{DoxyReturn}{Returns}
+valor da área do \hyperlink{class_poligono}{Poligono} 
+\end{DoxyReturn}
 \index{Poligono@{Poligono}!imprime\+Pol@{imprime\+Pol}}
 \index{imprime\+Pol@{imprime\+Pol}!Poligono@{Poligono}}
 \subsubsection[{\texorpdfstring{imprime\+Pol()}{imprimePol()}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::imprime\+Pol (
@@ -56,6 +80,10 @@ void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} 
 {}
 \end{DoxyParamCaption}
 )}\hypertarget{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{}\label{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}
+
+
+imprime\+Pol exibe um \hyperlink{class_poligono}{Poligono} 
+
 \index{Poligono@{Poligono}!num\+Vet\+Pol@{num\+Vet\+Pol}}
 \index{num\+Vet\+Pol@{num\+Vet\+Pol}!Poligono@{Poligono}}
 \subsubsection[{\texorpdfstring{num\+Vet\+Pol(void)}{numVetPol(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int Poligono\+::num\+Vet\+Pol (
@@ -63,6 +91,13 @@ void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} 
 \item[{void}]{}
 \end{DoxyParamCaption}
 )}\hypertarget{class_poligono_a0f63ca667ce8c15230353a5130baf3dd}{}\label{class_poligono_a0f63ca667ce8c15230353a5130baf3dd}
+
+
+num\+Vet\+Pol recupera a quantidade de vértices que foram inseridos no \hyperlink{class_poligono}{Poligono} 
+
+\begin{DoxyReturn}{Returns}
+valor com a quantidade de vértices inseridos 
+\end{DoxyReturn}
 \index{Poligono@{Poligono}!rotacionar\+Pol@{rotacionar\+Pol}}
 \index{rotacionar\+Pol@{rotacionar\+Pol}!Poligono@{Poligono}}
 \subsubsection[{\texorpdfstring{rotacionar\+Pol(float angulo, float a, float b)}{rotacionarPol(float angulo, float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::rotacionar\+Pol (
@@ -72,6 +107,19 @@ void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} 
 \item[{float}]{b}
 \end{DoxyParamCaption}
 )}\hypertarget{class_poligono_a615deb0368ea28feb68d325c2d17e32f}{}\label{class_poligono_a615deb0368ea28feb68d325c2d17e32f}
+
+
+rotacionar\+Pol rotaciona um \hyperlink{class_poligono}{Poligono} em torno de um \hyperlink{class_ponto}{Ponto} informado 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angulo} & é o ângulo de rotação a ser aplicado \\
+\hline
+{\em a} & é o valor da componente x do ponto de referência da rotacão \\
+\hline
+{\em b} & é o valor da componente y do ponto de referência da rotacao \\
+\hline
+\end{DoxyParams}
 \index{Poligono@{Poligono}!setn\+Vertices@{setn\+Vertices}}
 \index{setn\+Vertices@{setn\+Vertices}!Poligono@{Poligono}}
 \subsubsection[{\texorpdfstring{setn\+Vertices(int n)}{setnVertices(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::setn\+Vertices (
@@ -79,6 +127,15 @@ void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} 
 \item[{int}]{n}
 \end{DoxyParamCaption}
 )}\hypertarget{class_poligono_aa16b7ba7aaed5bdbef77862a69901823}{}\label{class_poligono_aa16b7ba7aaed5bdbef77862a69901823}
+
+
+setn\+Vertices insere vértices no \hyperlink{class_poligono}{Poligono} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & é o parâmetro que determina a quantidade de vértices do \hyperlink{class_poligono}{Poligono} \\
+\hline
+\end{DoxyParams}
 \index{Poligono@{Poligono}!set\+Vet\+Pol@{set\+Vet\+Pol}}
 \index{set\+Vet\+Pol@{set\+Vet\+Pol}!Poligono@{Poligono}}
 \subsubsection[{\texorpdfstring{set\+Vet\+Pol(int i, float x, float y)}{setVetPol(int i, float x, float y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::set\+Vet\+Pol (
@@ -88,6 +145,19 @@ void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} 
 \item[{float}]{y}
 \end{DoxyParamCaption}
 )}\hypertarget{class_poligono_a07656338edbd5bbd0b9bb7f4272717c1}{}\label{class_poligono_a07656338edbd5bbd0b9bb7f4272717c1}
+
+
+set\+Vet\+Pol altera os valores das coordenadas x e y de um vértice (\hyperlink{class_ponto}{Ponto}) do \hyperlink{class_poligono}{Poligono} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & é o parâmetro que indica o vértice (\hyperlink{class_ponto}{Ponto}) a ser alterado \\
+\hline
+{\em x} & é o valor a ser alterado na coordenada x do vértice \\
+\hline
+{\em y} & é o valor a ser alterado na coordenada y do vértice \\
+\hline
+\end{DoxyParams}
 \index{Poligono@{Poligono}!translada\+Pol@{translada\+Pol}}
 \index{translada\+Pol@{translada\+Pol}!Poligono@{Poligono}}
 \subsubsection[{\texorpdfstring{translada\+Pol(float a, float b)}{transladaPol(float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poligono\+::translada\+Pol (
@@ -96,6 +166,17 @@ void \hyperlink{class_poligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} 
 \item[{float}]{b}
 \end{DoxyParamCaption}
 )}\hypertarget{class_poligono_aa4948d6082b1cde7f7b683dacb88fde7}{}\label{class_poligono_aa4948d6082b1cde7f7b683dacb88fde7}
+
+
+translada\+Pol translada um \hyperlink{class_poligono}{Poligono} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & é o valor a ser transladado pelo \hyperlink{class_poligono}{Poligono} no eixo x \\
+\hline
+{\em b} & é o valor a ser transladado pelo \hyperlink{class_poligono}{Poligono} no eixo y \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

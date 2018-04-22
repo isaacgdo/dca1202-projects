@@ -220,7 +220,7 @@ int main()
                 limpar();
                 cout<<"Para utilizar a opcao de utilizar poligonos e necessario adicionar "
                       "um poligono."<<endl;
-                cout<<"Quantos vertice stem o seu poligono:"<<endl<<"Numero de vertices=";
+                cout<<"Quantos vertices tem o seu poligono:"<<endl<<"Numero de vertices=";
                 cin >>nvertices;
                 P.addPol(nvertices);
                 limpar();
