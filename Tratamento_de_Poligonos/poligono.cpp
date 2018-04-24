@@ -40,11 +40,15 @@ void Poligono::addPol(int n)
 float Poligono::calcAreaPol()
 {
     float area = 0;
-    for(int i=1;i<numVetPol();i++){
-        area = area +(vert[i].getX()+vert[i+1].getX())*(vert[i].getY()-vert[i+1].getY());
-    }
-    area = abs(area)/2;
-    return area;
+        int n = numVetPol();
+        int j = n - 1;
+            for (int i = 0; i < n; i++)
+            {
+                area += (vert[j].getX() + vert[i].getX()) * (vert[j].getY() - vert[i].getY());
+                j = i;
+            }
+        area = abs(area)/2;
+        return area;
 }
 
 void Poligono::transladaPol(float a, float b)

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 #include "ponto.h"
 #include "poligono.h"
 #include "retangulo.h"
@@ -6,9 +7,12 @@
 using namespace std;
 
 void limpar(void){
-    cout<<"\e[H\e[2J";
+    #ifdef defined WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
 }
-
 
 int main()
 {

@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "Tratamento_de_Poligonos", "index.html", [
+  [ "Tratamento de Poligonos", "index.html", [
     [ "Tratamento de Polígonos", "md_README.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
