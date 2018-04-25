@@ -7,7 +7,7 @@
 using namespace std;
 
 void limpar(void){
-    #ifdef defined WIN32
+    #ifdef WIN32
         system("cls");
     #else
         system("clear");
