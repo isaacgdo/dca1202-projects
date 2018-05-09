@@ -10,6 +10,7 @@ private:
 public:
     Reta(int _xi=0, int _yi=0, int _xf=0, int _yf=0);
     void draw(Screen &t);
+    int Sinal(int x);
 };
 
 #endif // RETA_H
