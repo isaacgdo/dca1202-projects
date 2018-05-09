@@ -1,6 +1,7 @@
 #include <iostream>
 #include "screen.h"
 #include "retangulo.h"
+#include "reta.h"
 
 using namespace std;
 
@@ -22,10 +23,17 @@ int main()
     cout << t;
 
     t.clear();
-    FiguraGeometrica *ret;
-    ret = new Retangulo(0,0,9,9);
-    ret->draw(t);
+    FiguraGeometrica *retangulo;
+    retangulo = new Retangulo(0,0,9,9);
+    retangulo->draw(t);
     cout << "exibindo um Retangulo" << endl;
+    cout << t;
+
+    t.clear();
+    FiguraGeometrica *reta;
+    reta = new Reta(5,5,20,20);
+    reta->draw(t);
+    cout << "exibindo uma Reta" << endl;
     cout << t;
 
     return 0;
