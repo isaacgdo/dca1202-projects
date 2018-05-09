@@ -13,7 +13,9 @@ Screen::Screen(int _nlin, int _ncol)
 
 void Screen::setPixel(int x, int y)
 {
-    mat[x][y] = brush;
+    if((x >=0 && x < nlin) && (y >= 0 && y < ncol)){
+        mat[x][y] = brush;
+    }
 }
 
 void Screen::clear()
