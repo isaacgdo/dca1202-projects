@@ -5,16 +5,19 @@
 
 using namespace std;
 
-Reta::Reta(int _xi, int _yi, int _xf, int _yf)
+Reta::Reta(int _xi, int _yi, int _xf, int _yf, char _brush)
 {
     xi = _xi;
     yi = _yi;
     xf = _xf;
     yf = _yf;
+    brush = _brush;
 }
 
 void Reta::draw(Screen &t)
 {
+    //Altera o caracter de desenho
+    t.setBrush(brush);
     int x = xi;
     int y = yi;
     int Troca;
@@ -22,15 +25,16 @@ void Reta::draw(Screen &t)
     int Delta_y = abs(yf - yi);
     int s1 = Sinal(xf - xi);
     int s2 = Sinal(yf - yi);
+    
     if(Delta_y > Delta_x){
         int Temp = Delta_x;
         Delta_x = Delta_y;
         Delta_y = Temp;
         Troca = 1;
-    }
-    else{
+    } else{
         Troca = 0;
     }
+    
     int new_e = 2*Delta_y - Delta_x;
     for(int i = 1; i <= Delta_x; i++){
         t.setPixel(x,y);
@@ -38,8 +42,7 @@ void Reta::draw(Screen &t)
             if(Troca == 1){
                 //Muda para a proxima linha de rasterização
                 x = x + s1;
-            }
-            else{
+            } else{
                 y = y + s2;
             }
             new_e = new_e - 2*Delta_x;
@@ -48,8 +51,7 @@ void Reta::draw(Screen &t)
         //Permanece nesta linha de rasterização
         if(Troca == 1){
             y = y + s2;
-        }
-        else{
+        } else{
             x = x + s1;
         }
         new_e = new_e + 2*Delta_y;
@@ -60,5 +62,5 @@ int Reta::Sinal(int x)
 {
     if(x < 0){ return -1; }
     if(x == 0){ return 0; }
-    else{ return 1; }
+    return 1; 
 }

@@ -27,6 +27,13 @@ void Screen::clear()
     }
 }
 
+void Screen::setScreen(int nl, int nc)
+{
+    nlin = nl;
+    ncol = nc;
+    mat = vector<vector<char>>(nlin, vector<char>(ncol,' '));
+}
+
 void Screen::setBrush(char _brush)
 {
     brush = _brush;
