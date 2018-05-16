@@ -1,0 +1,12 @@
+<map id="screen.h" name="screen.h">
+<area shape="rect" id="node2" href="$figurageometrica_8h.html" title="figurageometrica.h" alt="" coords="293,80,422,107"/>
+<area shape="rect" id="node3" href="$circulo_8h.html" title="circulo.h" alt="" coords="65,155,135,181"/>
+<area shape="rect" id="node4" href="$circulo_8cpp.html" title="circulo.cpp" alt="" coords="5,229,91,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="main.cpp" alt="" coords="136,229,211,256"/>
+<area shape="rect" id="node7" href="$retangulo_8h.html" title="retangulo.h" alt="" coords="211,155,298,181"/>
+<area shape="rect" id="node9" href="$reta_8h.html" title="reta.h" alt="" coords="489,155,543,181"/>
+<area shape="rect" id="node10" href="$reta_8cpp.html" title="reta.cpp" alt="" coords="513,229,583,256"/>
+<area shape="rect" id="node11" href="$screen_8cpp.html" title="screen.cpp" alt="" coords="619,80,706,107"/>
+<area shape="rect" id="node6" href="$figurageometrica_8cpp.html" title="figurageometrica.cpp" alt="" coords="322,155,465,181"/>
+<area shape="rect" id="node8" href="$retangulo_8cpp.html" title="retangulo.cpp" alt="" coords="234,229,334,256"/>
+</map>

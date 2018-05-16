@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_figura_geometrica.html" title="A classe FiguraGeometrica é uma classe abstrata que desenha Figuras Geometricas. " alt="" coords="5,56,131,83"/>
+<area shape="rect" id="node2" href="$class_circulo.html" title="A classe Circulo cria um objeto do tipo Circulo que pode ser desenhada numa Screen. " alt="" coords="188,5,251,32"/>
+<area shape="rect" id="node3" href="$class_reta.html" title="A classe Reta cria um objeto do tipo Reta que pode ser desenhada numa Screen. " alt="" coords="194,56,245,83"/>
+<area shape="rect" id="node4" href="$class_retangulo.html" title="A classe Retangulo cria um objeto do tipo Retangulo que pode ser desenhada numa Screen. " alt="" coords="179,107,260,133"/>
+</map>

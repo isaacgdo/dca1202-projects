@@ -1,0 +1,153 @@
+\hypertarget{class_screen}{}\section{Screen Class Reference}
+\label{class_screen}\index{Screen@{Screen}}
+
+
+A classe \hyperlink{class_screen}{Screen} exibe imagens numa tela.  
+
+
+
+
+{\ttfamily \#include $<$screen.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_screen_a95aff497d133f685fbbb959d78dc0899}{Screen} (int \+\_\+nlin=10, int \+\_\+ncol=10)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_screen}{Screen} é o construtor da classe \hyperlink{class_screen}{Screen}. \end{DoxyCompactList}\item 
+void \hyperlink{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}{set\+Pixel} (int x, int y)
+\begin{DoxyCompactList}\small\item\em set\+Pixel altera o conteúdo de um pixel da tela \end{DoxyCompactList}\item 
+void \hyperlink{class_screen_a35e74266b2a04e37b354ceff7a5f1031}{clear} ()
+\begin{DoxyCompactList}\small\item\em clear limpa a tela deixando-\/a em branco \end{DoxyCompactList}\item 
+void \hyperlink{class_screen_a59f2c3f9e889b425940749e8f646db72}{set\+Screen} (int nl, int nc)
+\begin{DoxyCompactList}\small\item\em set\+Screen altera as dismensões da tela \end{DoxyCompactList}\item 
+void \hyperlink{class_screen_aad52e3e6f35fe32f185cd70550a0a305}{set\+Brush} (char \+\_\+brush= \textquotesingle{}$\ast$\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em set\+Brush altera o pincel usado para desenhar na tela \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_screen_aab6a2880746bfe1b7964817cc8f0989e}{operator$<$$<$} (ostream \&os, \hyperlink{class_screen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ é a sobrecarga do operador $<$$<$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_screen}{Screen} exibe imagens numa tela. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Screen@{Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{Screen(int \+\_\+nlin=10, int \+\_\+ncol=10)}{Screen(int _nlin=10, int _ncol=10)}}]{\setlength{\rightskip}{0pt plus 5cm}Screen\+::\+Screen (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+nlin = {\ttfamily 10}, }
+\item[{int}]{\+\_\+ncol = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_screen_a95aff497d133f685fbbb959d78dc0899}{}\label{class_screen_a95aff497d133f685fbbb959d78dc0899}
+
+
+\hyperlink{class_screen}{Screen} é o construtor da classe \hyperlink{class_screen}{Screen}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+nlin} & é o número de linhas da tela, ou seja, a altura (dimensão Y) \\
+\hline
+{\em \+\_\+ncol} & é o número de colunas da tela, ou seja, a largura (dimensão X) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Screen@{Screen}!clear@{clear}}
+\index{clear@{clear}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_screen_a35e74266b2a04e37b354ceff7a5f1031}{}\label{class_screen_a35e74266b2a04e37b354ceff7a5f1031}
+
+
+clear limpa a tela deixando-\/a em branco 
+
+\index{Screen@{Screen}!set\+Brush@{set\+Brush}}
+\index{set\+Brush@{set\+Brush}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{set\+Brush(char \+\_\+brush= \textquotesingle{}$\ast$\textquotesingle{})}{setBrush(char _brush= '*')}}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\+::set\+Brush (
+\begin{DoxyParamCaption}
+\item[{char}]{\+\_\+brush = {\ttfamily \textquotesingle{}$\ast$\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_screen_aad52e3e6f35fe32f185cd70550a0a305}{}\label{class_screen_aad52e3e6f35fe32f185cd70550a0a305}
+
+
+set\+Brush altera o pincel usado para desenhar na tela 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+brush} & é o parâmetro que recebe o caracetere a ser usado para o pincel \\
+\hline
+\end{DoxyParams}
+\index{Screen@{Screen}!set\+Pixel@{set\+Pixel}}
+\index{set\+Pixel@{set\+Pixel}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{set\+Pixel(int x, int y)}{setPixel(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\+::set\+Pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}{}\label{class_screen_ae6bea81c57a22d226507c3c26fa95ee0}
+
+
+set\+Pixel altera o conteúdo de um pixel da tela 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & é a coordenada x do pixel a ser alterado \\
+\hline
+{\em y} & é a coordenada y do pixel a ser alterado \\
+\hline
+\end{DoxyParams}
+\index{Screen@{Screen}!set\+Screen@{set\+Screen}}
+\index{set\+Screen@{set\+Screen}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{set\+Screen(int nl, int nc)}{setScreen(int nl, int nc)}}]{\setlength{\rightskip}{0pt plus 5cm}void Screen\+::set\+Screen (
+\begin{DoxyParamCaption}
+\item[{int}]{nl, }
+\item[{int}]{nc}
+\end{DoxyParamCaption}
+)}\hypertarget{class_screen_a59f2c3f9e889b425940749e8f646db72}{}\label{class_screen_a59f2c3f9e889b425940749e8f646db72}
+
+
+set\+Screen altera as dismensões da tela 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nl} & é o número de linhas a ser setado \\
+\hline
+{\em nc} & é o número de colunas a ser setado \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Screen@{Screen}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Screen@{Screen}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{{\bf Screen} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_screen_aab6a2880746bfe1b7964817cc8f0989e}{}\label{class_screen_aab6a2880746bfe1b7964817cc8f0989e}
+
+
+operator $<$$<$ é a sobrecarga do operador $<$$<$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & é um parâmetro de fluxos de saída \\
+\hline
+{\em t} & é a tela na qual deve ser desenhada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{screen_8h}{screen.\+h}\item 
+\hyperlink{screen_8cpp}{screen.\+cpp}\end{DoxyCompactItemize}

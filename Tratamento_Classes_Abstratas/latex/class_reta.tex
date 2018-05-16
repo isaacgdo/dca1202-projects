@@ -1,0 +1,124 @@
+\hypertarget{class_reta}{}\section{Reta Class Reference}
+\label{class_reta}\index{Reta@{Reta}}
+
+
+A classe \hyperlink{class_reta}{Reta} cria um objeto do tipo \hyperlink{class_reta}{Reta} que pode ser desenhada numa \hyperlink{class_screen}{Screen}.  
+
+
+
+
+{\ttfamily \#include $<$reta.\+h$>$}
+
+
+
+Inheritance diagram for Reta\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_reta__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reta\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_reta__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_reta_a3eea3336e04e4f8acdb9cbb3cafb472a}{Reta} (int \+\_\+xi=0, int \+\_\+yi=0, int \+\_\+xf=0, int \+\_\+yf=0, char \+\_\+brush=\textquotesingle{}$\ast$\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_reta}{Reta} é o construtor da classe \hyperlink{class_reta}{Reta}. \end{DoxyCompactList}\item 
+void \hyperlink{class_reta_ac2e9805183cd474b62bffd8b032cd780}{draw} (\hyperlink{class_screen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em draw é uma função que desenha a \hyperlink{class_reta}{Reta} criada numa tela \end{DoxyCompactList}\item 
+int \hyperlink{class_reta_a0890517655f27827a827c88850f8984e}{Sinal} (int x)
+\begin{DoxyCompactList}\small\item\em Sinal é uma função auxialiar usada no algoritmo de desenhar uma \hyperlink{class_reta}{Reta} digital. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_reta}{Reta} cria um objeto do tipo \hyperlink{class_reta}{Reta} que pode ser desenhada numa \hyperlink{class_screen}{Screen}. 
+
+Esta classe extende a classe \hyperlink{class_figura_geometrica}{Figura\+Geometrica} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Reta@{Reta}!Reta@{Reta}}
+\index{Reta@{Reta}!Reta@{Reta}}
+\subsubsection[{\texorpdfstring{Reta(int \+\_\+xi=0, int \+\_\+yi=0, int \+\_\+xf=0, int \+\_\+yf=0, char \+\_\+brush=\textquotesingle{}$\ast$\textquotesingle{})}{Reta(int _xi=0, int _yi=0, int _xf=0, int _yf=0, char _brush='*')}}]{\setlength{\rightskip}{0pt plus 5cm}Reta\+::\+Reta (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+xi = {\ttfamily 0}, }
+\item[{int}]{\+\_\+yi = {\ttfamily 0}, }
+\item[{int}]{\+\_\+xf = {\ttfamily 0}, }
+\item[{int}]{\+\_\+yf = {\ttfamily 0}, }
+\item[{char}]{\+\_\+brush = {\ttfamily \textquotesingle{}$\ast$\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_reta_a3eea3336e04e4f8acdb9cbb3cafb472a}{}\label{class_reta_a3eea3336e04e4f8acdb9cbb3cafb472a}
+
+
+\hyperlink{class_reta}{Reta} é o construtor da classe \hyperlink{class_reta}{Reta}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+xi} & é a coordenada x do ponto inicial da \hyperlink{class_reta}{Reta} \\
+\hline
+{\em \+\_\+yi} & é a coordenada y do ponto inicial da \hyperlink{class_reta}{Reta} \\
+\hline
+{\em \+\_\+xf} & é a coordenada x do ponto final da \hyperlink{class_reta}{Reta} \\
+\hline
+{\em \+\_\+yf} & é a coordenada y do ponto final da \hyperlink{class_reta}{Reta} \\
+\hline
+{\em \+\_\+brush} & é o caractere a ser usado para desenhar a \hyperlink{class_reta}{Reta} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Reta@{Reta}!draw@{draw}}
+\index{draw@{draw}!Reta@{Reta}}
+\subsubsection[{\texorpdfstring{draw(\+Screen \&t)}{draw(Screen &t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Reta\+::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf Screen} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_reta_ac2e9805183cd474b62bffd8b032cd780}{}\label{class_reta_ac2e9805183cd474b62bffd8b032cd780}
+
+
+draw é uma função que desenha a \hyperlink{class_reta}{Reta} criada numa tela 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & é a tela na qual se deseja desenhar \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_figura_geometrica_a8ee8dedc060b6059a805ea091aef2c41}{Figura\+Geometrica}.
+
+\index{Reta@{Reta}!Sinal@{Sinal}}
+\index{Sinal@{Sinal}!Reta@{Reta}}
+\subsubsection[{\texorpdfstring{Sinal(int x)}{Sinal(int x)}}]{\setlength{\rightskip}{0pt plus 5cm}int Reta\+::\+Sinal (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{class_reta_a0890517655f27827a827c88850f8984e}{}\label{class_reta_a0890517655f27827a827c88850f8984e}
+
+
+Sinal é uma função auxialiar usada no algoritmo de desenhar uma \hyperlink{class_reta}{Reta} digital. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & é um parâmetro usado para o cálculo da reta digital \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor inteiro (-\/1, 0 ou 1) que indicará o sinal de uma operação necessária para desenhar a \hyperlink{class_reta}{Reta} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{reta_8h}{reta.\+h}\item 
+\hyperlink{reta_8cpp}{reta.\+cpp}\end{DoxyCompactItemize}
