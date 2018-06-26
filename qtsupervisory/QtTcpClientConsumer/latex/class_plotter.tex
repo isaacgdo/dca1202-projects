@@ -1,0 +1,81 @@
+\hypertarget{class_plotter}{}\section{Plotter Class Reference}
+\label{class_plotter}\index{Plotter@{Plotter}}
+
+
+{\ttfamily \#include $<$plotter.\+h$>$}
+
+
+
+Inheritance diagram for Plotter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{class_plotter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Plotter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{class_plotter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_plotter_a367b6890c36910a27ec710ac3693e64b}{Plotter} (Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Construtor do componente \hyperlink{class_plotter}{Plotter}. \end{DoxyCompactList}\item 
+void \hyperlink{class_plotter_ac4341569909943e37e1ff756587e6e12}{paint\+Event} (Q\+Paint\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em Paint event. \end{DoxyCompactList}\item 
+void \hyperlink{class_plotter_ae73b5093b98bbbebd6abdb4e7e7807ed}{load\+Data} (std\+::vector$<$ double $>$, std\+::vector$<$ double $>$)
+\begin{DoxyCompactList}\small\item\em Função que carrega os dados referentes aos tempos e aos dados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Plotter@{Plotter}!Plotter@{Plotter}}
+\index{Plotter@{Plotter}!Plotter@{Plotter}}
+\subsubsection[{\texorpdfstring{Plotter(\+Q\+Widget $\ast$parent=0)}{Plotter(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Plotter\+::\+Plotter (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_plotter_a367b6890c36910a27ec710ac3693e64b}{}\label{class_plotter_a367b6890c36910a27ec710ac3693e64b}
+
+
+Construtor do componente \hyperlink{class_plotter}{Plotter}. 
+
+adiciona os valores aos vectores de tempos e de dados 
+
+\subsection{Member Function Documentation}
+\index{Plotter@{Plotter}!load\+Data@{load\+Data}}
+\index{load\+Data@{load\+Data}!Plotter@{Plotter}}
+\subsubsection[{\texorpdfstring{load\+Data(std\+::vector$<$ double $>$, std\+::vector$<$ double $>$)}{loadData(std::vector< double >, std::vector< double >)}}]{\setlength{\rightskip}{0pt plus 5cm}void Plotter\+::load\+Data (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ double $>$}]{t, }
+\item[{std\+::vector$<$ double $>$}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{class_plotter_ae73b5093b98bbbebd6abdb4e7e7807ed}{}\label{class_plotter_ae73b5093b98bbbebd6abdb4e7e7807ed}
+
+
+Função que carrega os dados referentes aos tempos e aos dados. 
+
+Recebe os 30 ultimos dados e os usa na classe \hyperlink{class_plotter}{Plotter}. \index{Plotter@{Plotter}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Plotter@{Plotter}}
+\subsubsection[{\texorpdfstring{paint\+Event(\+Q\+Paint\+Event $\ast$e)}{paintEvent(QPaintEvent *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Plotter\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{class_plotter_ac4341569909943e37e1ff756587e6e12}{}\label{class_plotter_ac4341569909943e37e1ff756587e6e12}
+
+
+Paint event. 
+
+Desenha o grafico utilizando retas, usando dois pontos de cada vez. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{plotter_8h}{plotter.\+h}\item 
+\hyperlink{plotter_8cpp}{plotter.\+cpp}\end{DoxyCompactItemize}

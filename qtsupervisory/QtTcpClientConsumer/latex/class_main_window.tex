@@ -1,0 +1,161 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+A classe \hyperlink{class_main_window}{Main\+Window} representa o contâiner da janela da aplicação e seus componentes.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a4a2ddf4cf2ec8e240cc340416b1df792}{get\+Data} ()
+\begin{DoxyCompactList}\small\item\em get\+Data é um função que cria um temporalizador usado na função timer\+Event para possibilitar o recebimento constante de dados ao servidor. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}{stop\+Data} ()
+\begin{DoxyCompactList}\small\item\em stop\+Data é um função que \char`\"{}mata\char`\"{} o temporalizador criado pela função get\+Data , fazendo com que o envio de dados ao servidor cesse. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_main_window_a2bf0fb2c40fb08b96f95f65d9ee1c979}{get\+IP} ()
+\begin{DoxyCompactList}\small\item\em get\+IP é um função que grava o conteudo pressente no campo de texto do objeto line\+Edit em uma Qstring. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_aa1b929ac26c3c547b2904e88b7f70284}{List\+Hosts} ()
+\begin{DoxyCompactList}\small\item\em List\+Hosts é um função que lista as máquinas que enviaram dados ao servidos, e mostra os endereços dessas maquinas. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Connect abre uma conexão com um servidor informado \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}{tcp\+Disconnect} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Disconnect fecha uma conexão com um servidor informado \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}{timer\+Event} (Q\+Timer\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em timer\+Event é uma função que vai ser executada a cada vez que o temporizador for acionado e recupera os valores de tempo, e de dados que foram enviados para o servidor por outras máquinas \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A classe \hyperlink{class_main_window}{Main\+Window} representa o contâiner da janela da aplicação e seus componentes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{Main\+Window(\+Q\+Widget $\ast$parent=0)}{MainWindow(QWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Window\+::\+Main\+Window (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
+\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{$\sim$\+Main\+Window()}{~MainWindow()}}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Window\+::$\sim$\+Main\+Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+\subsection{Member Function Documentation}
+\index{Main\+Window@{Main\+Window}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{get\+Data}{getData}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::get\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a4a2ddf4cf2ec8e240cc340416b1df792}{}\label{class_main_window_a4a2ddf4cf2ec8e240cc340416b1df792}
+
+
+get\+Data é um função que cria um temporalizador usado na função timer\+Event para possibilitar o recebimento constante de dados ao servidor. 
+
+\index{Main\+Window@{Main\+Window}!get\+IP@{get\+IP}}
+\index{get\+IP@{get\+IP}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{get\+IP}{getIP}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Main\+Window\+::get\+IP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a2bf0fb2c40fb08b96f95f65d9ee1c979}{}\label{class_main_window_a2bf0fb2c40fb08b96f95f65d9ee1c979}
+
+
+get\+IP é um função que grava o conteudo pressente no campo de texto do objeto line\+Edit em uma Qstring. 
+
+\index{Main\+Window@{Main\+Window}!List\+Hosts@{List\+Hosts}}
+\index{List\+Hosts@{List\+Hosts}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{List\+Hosts}{ListHosts}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::\+List\+Hosts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_aa1b929ac26c3c547b2904e88b7f70284}{}\label{class_main_window_aa1b929ac26c3c547b2904e88b7f70284}
+
+
+List\+Hosts é um função que lista as máquinas que enviaram dados ao servidos, e mostra os endereços dessas maquinas. 
+
+\index{Main\+Window@{Main\+Window}!stop\+Data@{stop\+Data}}
+\index{stop\+Data@{stop\+Data}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{stop\+Data}{stopData}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::stop\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}{}\label{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}
+
+
+stop\+Data é um função que \char`\"{}mata\char`\"{} o temporalizador criado pela função get\+Data , fazendo com que o envio de dados ao servidor cesse. 
+
+\index{Main\+Window@{Main\+Window}!tcp\+Connect@{tcp\+Connect}}
+\index{tcp\+Connect@{tcp\+Connect}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{tcp\+Connect}{tcpConnect}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::tcp\+Connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{}\label{class_main_window_ac5b669957c442b6eb68573dacfce33e1}
+
+
+tcp\+Connect abre uma conexão com um servidor informado 
+
+\index{Main\+Window@{Main\+Window}!tcp\+Disconnect@{tcp\+Disconnect}}
+\index{tcp\+Disconnect@{tcp\+Disconnect}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{tcp\+Disconnect}{tcpDisconnect}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::tcp\+Disconnect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}{}\label{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}
+
+
+tcp\+Disconnect fecha uma conexão com um servidor informado 
+
+\index{Main\+Window@{Main\+Window}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection[{\texorpdfstring{timer\+Event}{timerEvent}}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Window\+::timer\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Timer\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}{}\label{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}
+
+
+timer\+Event é uma função que vai ser executada a cada vez que o temporizador for acionado e recupera os valores de tempo, e de dados que foram enviados para o servidor por outras máquinas 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}
