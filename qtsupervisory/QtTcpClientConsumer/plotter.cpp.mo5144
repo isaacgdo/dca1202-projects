@@ -1,0 +1,75 @@
+#include "plotter.h"
+#include <QPainter>
+#include <QBrush>
+#include <QPen>
+#include <QColor>
+#include <cmath>
+#include <QDebug>
+
+Plotter::Plotter(QWidget *parent) : QWidget(parent)
+{
+    for(int i=0; i<30; i++){
+        tempos.push_back(i);
+        dados.push_back(i);
+    }
+}
+void Plotter::paintEvent(QPaintEvent *event){
+    QPainter painter(this);
+    QBrush brush;
+    QPen pen;
+    double x1, x2, y1, y2;
+
+    // habilita o anti aliasing (atenua o
+    // efeito de serrilhado nas figuras geometricas)
+    painter.setRenderHint(QPainter::Antialiasing);
+
+    // brush com a cor branca com preenchimento
+    // solido
+    brush.setColor(QColor(220, 220, 220));
+    brush.setStyle(Qt::CrossPattern);
+    // informa ao painter qual o pincel atual
+    painter.setBrush(brush);
+    // informa ao painter qual o pincel atual
+    painter.setBrush(brush);
+
+    // pen com cor vermelha e dois pixels de largura
+    pen.setColor(QColor(0,0,0));
+    pen.setWidth(2);
+
+    // informa ao painter qual o pen atual
+    painter.setPen(pen);
+
+    // desenha um retangulo tomando toda a area
+    // do componente
+    painter.drawRect(0,0,width(), height());
+
+    // pen com cor vermelha e dois pixels de largura
+    pen.setColor(QColor(0,255,0));
+    pen.setWidth(2);
+    pen.setStyle(Qt::SolidLine);
+
+    // comunica ao painter a nova caneta
+    painter.setPen(pen);
+
+
+    //plotando graficos
+
+        x1 = (width()/2) - ((tempos[0])*(width()/2));
+        y1 = (height()/2) - ((dados[0])*(height()/2));
+
+        for(int i=1; i<30; i++){
+            x2=(width()/2) - ((tempos[i])*(width()/2));
+            y2=(height()/2) - ((dados[i])*(height()/2));
+            painter.drawLine(x1,y1,x2,y2);
+            x1 = x2;
+            y1 = y2;
+        }
+
+}
+
+void Plotter::loadData(std::vector<double> t, std::vector<double> d)
+{
+    tempos=t;
+    dados=d;
+    repaint();
+}
